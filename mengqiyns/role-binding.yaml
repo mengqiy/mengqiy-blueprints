@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: app-admin
+  namespace: example
+roleRef:
+  kind: ClusterRole
+  name: app-admin
+  apiGroup: ''
+subjects:
+  - kind: Group
+    name: example.admin@bigco.com
