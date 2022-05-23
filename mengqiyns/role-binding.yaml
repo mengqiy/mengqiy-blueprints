@@ -8,5 +8,5 @@ roleRef:
   name: app-admin
   apiGroup: ''
 subjects:
-  - kind: Group
-    name: example.admin@bigco.com
+- kind: Group
+  name: example.admin@bigco.com
